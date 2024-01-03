@@ -26,7 +26,7 @@ void openfile(const char* filename, FILE** finput);
 int getint(FILE* fp);
 
 //CRITICAL POINT: images' paths - You need to change these paths
-#define IN "C:\Users\robin\COMP1001\COMP1001-master\23_24_coursework\Report\question3\VS\code_to_start\input_images\a0.pgm" /*"C:\\Users\\vboxuser\\source\\repos\\image_processing\\image_processing\\input_images\\a1.pgm"*/
+#define IN "C:\\Users\\robin\COMP1001\\COMP1001-master\\23_24_coursework\\Report\\question3\\VS\code_to_start\\input_images\\a0.pgm" /*"C:\\Users\\vboxuser\\source\\repos\\image_processing\\image_processing\\input_images\\a1.pgm"*/
 #define OUT "C:\\Users\\vboxuser\\source\\repos\\image_processing\\image_processing\\output_images\\blurred.pgm"
 #define OUT2 "C:\\Users\\vboxuser\\source\\repos\\image_processing\\image_processing\\output_images\\edge_detection.pgm"
 
@@ -247,12 +247,15 @@ void openfile(const char* filename, FILE** finput)
 
 	//CRITICAL POINT: AT THIS POINT YOU CAN ASSIGN x0,y0 to M,N 
 	// printf("\n Image dimensions are M=%d,N=%d",M,N);
-
+	M = x0;
+	N = y0:
 
 	x = getint(*finput); /* read and throw away the range info */
 	//printf("\n range info is %d",x);
 
 }
+
+
 
 
 
@@ -308,6 +311,8 @@ int getint(FILE* fp) /* adapted from "xv" source code */
 	}
 	return i;
 }
+
+
 
 
 
